@@ -49,7 +49,17 @@ nav{
 }
 
 .brand b{color:var(--blue)}
+.brand-logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
 
+.brand-logo img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
 .tag{
   font-size:12px;
   font-weight:400;
@@ -288,9 +298,12 @@ footer{
 <div class="wrap">
 <nav>
 
-<div class="brand">
-📦 Colis<b>Match</b>
-<span class="tag">Le colis qui voyage en toute confiance.</span>
+<div class="brand brand-logo">
+  <img src="logo-colismatch.png" alt="Logo ColisMatch">
+  <div>
+    Colis<b>Match</b>
+    <span class="tag">Le colis qui voyage en toute confiance.</span>
+  </div>
 </div>
 
 <div class="links">

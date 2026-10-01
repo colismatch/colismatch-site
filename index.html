@@ -159,26 +159,18 @@ h1 span{color:var(--blue)}
 .form-message.error{color:#b42318}
 
 .visual{
-  background:var(--blue);
-  border-radius:30px;
-  padding:42px;
-  color:white;
-  min-height:320px;
   display:flex;
-  flex-direction:column;
+  align-items:center;
   justify-content:center;
+  min-width:0;
 }
 
-.visual .box{
-  width:100%;
-  text-align:center;
-}
-
-.visual .box img{
-  width:100%;
+.visual > img{
+  width:115%;
+  max-width:none;
   height:auto;
   display:block;
-  border-radius:18px;
+  object-fit:contain;
 }
 
 .trust{
@@ -338,8 +330,9 @@ footer{
 <div class="badge">Bientôt disponible</div>
 
 <h1>
-Le colis qui voyage
-<span>en toute confiance.</span>
+Un trajet prévu.<br>
+Un colis à transporter.<br>
+<span>Un service rendu.</span>
 </h1>
 
 <p class="lead">
@@ -384,17 +377,7 @@ le lancement de ColisMatch. Désinscription possible à tout moment.
 </div>
 
 <div class="visual">
-
-<div class="box">
   <img src="visuel-colismatch.png" alt="Illustration ColisMatch : trajet, voiture et colis">
-</div>
-
-<h3>Les mêmes trajets. Des colis en plus.</h3>
-
-<p>
-Paiement sécurisé • Utilisateurs vérifiés • Suivi du colis
-</p>
-
 </div>
 </div>
 </div>

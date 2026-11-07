@@ -214,6 +214,9 @@ h2{
 .step{
   padding:25px;
   text-align:center;
+  border:1px solid #b9d5fb;
+  border-radius:16px;
+  background:#f4f8fd;
 }
 
 .num{
@@ -368,9 +371,8 @@ Un colis à transporter.<br>
 </h1>
 
 <p class="lead">
-ColisMatch met en relation les personnes qui ont un colis à envoyer
-avec celles qui font déjà le trajet.
-Une solution simple, économique et plus responsable.
+<strong>Le covoiturage de colis entre particuliers.</strong><br>
+Envoyez un colis ou transportez-en un lors d’un trajet déjà prévu.
 </p>
 
 <form class="signup" id="inscription">
@@ -417,75 +419,107 @@ le lancement de ColisMatch. Désinscription possible à tout moment.
 
 <div class="wrap trust" id="concept">
 
-<div class="card">
-<div class="icon">🛡️</div>
-<b>Paiement sécurisé</b>
-<p>Transactions protégées.</p>
+  <p style="grid-column:1 / -1;text-align:center;color:var(--navy);margin:0 0 8px;">
+    Fonctionnalités prévues au lancement
+  </p>
+
+  <div class="card">
+    <div class="icon">🛡️</div>
+    <b>Paiement sécurisé</b>
+    <p>Paiement dans l’application via Stripe.</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">👤</div>
+    <b>Vérification d’identité</b>
+    <p>Une identité vérifiée pour renforcer la confiance.</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">📍</div>
+    <b>Suivi du colis</b>
+    <p>Prise en charge et réception confirmées dans l’application.</p>
+  </div>
+
+  <div class="card">
+    <div class="icon">🌱</div>
+    <b>Trajets déjà prévus</b>
+    <p>Des colis transportés sur des déplacements existants.</p>
+  </div>
+
 </div>
 
-<div class="card">
-<div class="icon">👤</div>
-<b>Utilisateurs vérifiés</b>
-<p>Plus de confiance entre utilisateurs.</p>
-</div>
-
-<div class="card">
-<div class="icon">📍</div>
-<b>Suivi du colis</b>
-<p>Traçabilité du départ à la réception.</p>
-</div>
-
-<div class="card">
-<div class="icon">🌱</div>
-<b>Trajets optimisés</b>
-<p>Utiliser des déplacements déjà prévus.</p>
-</div>
-
-</div>
 
 
 <section id="fonctionnement">
+  <div class="wrap">
+    <h2>Comment ça marche ?</h2>
+    <p class="sub">
+      Deux façons de participer à ColisMatch.
+      Voici le fonctionnement prévu au lancement.
+    </p>
 
-<div class="wrap">
+    <h3 style="text-align:center;color:var(--blue);font-size:26px;">
+      J’envoie un colis
+    </h3>
 
-<h2>Comment ça marche ?</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h4>Publiez votre besoin</h4>
+        <p>Précisez le colis, les lieux de départ et d’arrivée et la date souhaitée.</p>
+      </div>
 
-<p class="sub">
-Simple, rapide et sécurisé.
-</p>
+      <div class="step">
+        <div class="num">2</div>
+        <h4>Trouvez un conducteur</h4>
+        <p>Choisissez un trajet compatible et convenez des modalités de remise.</p>
+      </div>
 
-<div class="steps">
+      <div class="step">
+        <div class="num">3</div>
+        <h4>Remettez votre colis</h4>
+        <p>Retrouvez le conducteur au lieu convenu et validez la prise en charge.</p>
+      </div>
 
-<div class="step">
-<div class="num">1</div>
-<h3>Publiez votre besoin</h3>
-<p>Indiquez le colis, la destination et la date souhaitée.</p>
-</div>
+      <div class="step">
+        <div class="num">4</div>
+        <h4>Le colis est réceptionné</h4>
+        <p>Le destinataire confirme la réception pour finaliser la livraison.</p>
+      </div>
+    </div>
 
-<div class="step">
-<div class="num">2</div>
-<h3>Trouvez un voyageur</h3>
-<p>Choisissez parmi les trajets compatibles disponibles.</p>
-</div>
+    <h3 style="text-align:center;color:var(--blue);font-size:26px;margin-top:40px;">
+      Je fais un trajet
+    </h3>
 
-<div class="step">
-<div class="num">3</div>
-<h3>Remettez le colis</h3>
-<p>Remise en main propre avec validation et preuve.</p>
-</div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h4>Proposez votre trajet</h4>
+        <p>Indiquez votre itinéraire, votre date de départ et la place disponible.</p>
+      </div>
 
-<div class="step">
-<div class="num">4</div>
-<h3>Votre colis arrive</h3>
-<p>
-Le destinataire confirme la réception et la transaction est finalisée.
-</p>
-</div>
+      <div class="step">
+        <div class="num">2</div>
+        <h4>Choisissez un colis</h4>
+        <p>Trouvez un colis adapté à votre trajet et à votre véhicule.</p>
+      </div>
 
-</div>
-</div>
+      <div class="step">
+        <div class="num">3</div>
+        <h4>Transportez le colis</h4>
+        <p>Récupérez-le auprès de l’expéditeur et remettez-le au destinataire.</p>
+      </div>
+
+      <div class="step">
+        <div class="num">4</div>
+        <h4>Recevez votre rémunération</h4>
+        <p>La confirmation de réception déclenche le versement selon les conditions du service.</p>
+      </div>
+    </div>
+  </div>
 </section>
-
 
 <section>
 
